@@ -14,7 +14,7 @@ namespace sumOfPrimes
             bool err ;
             for (int i = 5; i <= 2000000; i=i+2)
             {
-                err = false;/
+                err = false;
                 for (int m = 3; m < i; m=m+2)
                 {
                     if (i % m == 0)
