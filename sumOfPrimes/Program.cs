@@ -14,7 +14,7 @@ namespace sumOfPrimes
             bool err ;
             for (int i = 5; i <= 2000000; i=i+2)
             {
-                err = false;
+                err = false;//g45g5g
                 for (int m = 3; m < i; m=m+2)
                 {
                     if (i % m == 0)
@@ -35,7 +35,7 @@ namespace sumOfPrimes
             string elapsedTime = String.Format("{0:00}:{1:00}:{2:00}.{3:00}",
                 ts.Hours, ts.Minutes, ts.Seconds,
                 ts.Milliseconds / 10);
-            Console.WriteLine("RunTime " + elapsedTime);
+            Console.WriteLine("RunTime " + elapsedTime);//rfrwf
         }
     }
 }
