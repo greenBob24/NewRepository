@@ -18,7 +18,7 @@ namespace sumOfPrimes
                 for (int m = 3; m < i; m=m+2)
                 {
                     if (i % m == 0)
-                    {
+                    {   //t5by5b
                         err = true;
                         break;
                     }
