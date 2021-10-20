@@ -9,8 +9,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3or5", "3or5\3or5.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Template", "Template\Template.csproj", "{4FD392E2-F9BD-4999-8854-6C696FCF973D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Degrees", "Degrees\Degrees.csproj", "{9FCA689D-3DE9-4C00-825C-41F88DD4FE3C}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,10 +27,6 @@ Global
 		{4FD392E2-F9BD-4999-8854-6C696FCF973D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4FD392E2-F9BD-4999-8854-6C696FCF973D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4FD392E2-F9BD-4999-8854-6C696FCF973D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9FCA689D-3DE9-4C00-825C-41F88DD4FE3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9FCA689D-3DE9-4C00-825C-41F88DD4FE3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9FCA689D-3DE9-4C00-825C-41F88DD4FE3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9FCA689D-3DE9-4C00-825C-41F88DD4FE3C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
