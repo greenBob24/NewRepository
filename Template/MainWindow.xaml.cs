@@ -22,11 +22,14 @@ namespace Template
     /// </summary>
     public partial class MainWindow : Window
     {
+        private VMModel vm = new VMModel();
         public MainWindow()
         {
             InitializeComponent();
-            VMModel vm = new VMModel();
-            vm.Cars = new ObservableCollection<Car>{ new Car("logan","renault", Directory.GetCurrentDirectory()+"\\renault.jpg"), new Car("camry","toyota", Directory.GetCurrentDirectory()+"\\toyota.jpg")};
+            vm.Cars = new ObservableCollection<Car>{ new Car("logan","renault", Directory.GetCurrentDirectory()+"\\renault.jpg"), 
+                new Car("camry","toyota", Directory.GetCurrentDirectory()+@"\toyota.jpg"),
+                new Car ("vesta","lada",Directory.GetCurrentDirectory()+"\\lada_vesta.jpg"),
+                new Car("DB9","Aston Martin",Directory.GetCurrentDirectory()+@"\astonmartin_db9.jpg")};
             carsList.ItemsSource = vm.Cars;
           
         }
@@ -34,6 +37,12 @@ namespace Template
         {
             Car car = (Car)carsList.SelectedItem;
             MessageBox.Show(car.ModelName);
+        }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            AddWindow addwindow = new AddWindow();
+            addwindow.Show();
         }
     }
 }

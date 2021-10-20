@@ -6,17 +6,35 @@
         xmlns:local="clr-namespace:Template"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+        <DataTemplate x:Key="dTemplate">
+            <StackPanel >
+                <Image Width="100" Height="75" Source="{Binding Path=ImageOfCar}" />
+                <TextBlock FontSize="18" Text="{Binding Path=Company}" HorizontalAlignment="Center" />
+                <TextBlock FontSize="18" Text="{Binding Path=ModelName}" HorizontalAlignment="Center" />
+            </StackPanel>
+        </DataTemplate>
+        <ItemsPanelTemplate x:Key="panelTemplate">
+            <WrapPanel />
+        </ItemsPanelTemplate>
+    </Window.Resources>
     <Grid>
-        <ListBox x:Name="carsList" SelectionChanged="carsList_SelectionChanged" >
-            <ListBox.ItemTemplate>
-                <DataTemplate>
-                    <StackPanel >
-                        <Image Width="100" Height="75" Source="{Binding Path=ImageOfCar}" />
-                        <TextBlock FontSize="18" Text="{Binding Path=Company}" HorizontalAlignment="Center" />
-                        <TextBlock FontSize="18" Text="{Binding Path=ModelName}" HorizontalAlignment="Center" />
-                    </StackPanel>
-                </DataTemplate>
-            </ListBox.ItemTemplate>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <ListBox x:Name="carsList" Grid.Row="0" 
+                 SelectionChanged="carsList_SelectionChanged" 
+                 ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                 ItemTemplate="{StaticResource dTemplate}"
+                 ItemsPanel="{StaticResource panelTemplate}">
         </ListBox>
+        <StackPanel Grid.Row="1">
+            <Button x:Name="button1" MinHeight="50" MinWidth="100"
+                    HorizontalAlignment="Left"
+                    Content="Добавить автомобиль" Click="button1_Click">
+            </Button>
+        </StackPanel>
+        
     </Grid>
 </Window>
