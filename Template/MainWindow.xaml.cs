@@ -22,7 +22,11 @@ namespace Template
     /// </summary>
     public partial class MainWindow : Window
     {
-        private VMModel vm = new VMModel();
+        public VMModel vm = new VMModel();
+        public string model;
+        public string brand;
+        public string path;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -43,6 +47,8 @@ namespace Template
         {
             AddWindow addwindow = new AddWindow();
             addwindow.Show();
+
+
         }
     }
 }
