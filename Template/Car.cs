@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Template
 {
-    class Car
+    public class Car
     {
         public string ModelName { get; set; }
         public string Company { get; set; }

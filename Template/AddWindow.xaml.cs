@@ -20,15 +20,18 @@ namespace Template
     /// </summary>
     public partial class AddWindow : Window
     {
-        public AddWindow()
+        private VMModel _vm;
+
+        public AddWindow(VMModel vm)
         {
             InitializeComponent();
+            _vm = vm;
         }
 
         private void addButton_Click(object sender, RoutedEventArgs e)
         {
-            
-            
+            _vm.AddCar(addBrandTextBox.Text, addModelTextBox.Text, "");
+            this.Close();
         }
     }
 }

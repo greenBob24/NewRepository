@@ -30,10 +30,7 @@ namespace Template
         public MainWindow()
         {
             InitializeComponent();
-            vm.Cars = new ObservableCollection<Car>{ new Car("logan","renault", Directory.GetCurrentDirectory()+"\\renault.jpg"), 
-                new Car("camry","toyota", Directory.GetCurrentDirectory()+@"\toyota.jpg"),
-                new Car ("vesta","lada",Directory.GetCurrentDirectory()+"\\lada_vesta.jpg"),
-                new Car("DB9","Aston Martin",Directory.GetCurrentDirectory()+@"\astonmartin_db9.jpg")};
+            vm.Load();
             carsList.ItemsSource = vm.Cars;
           
         }
@@ -45,8 +42,9 @@ namespace Template
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-            AddWindow addwindow = new AddWindow();
-            addwindow.Show();
+            AddWindow addwindow = new AddWindow(vm);
+            addwindow.ShowDialog();
+
 
 
         }
