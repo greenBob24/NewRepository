@@ -22,7 +22,7 @@ namespace Template
     /// </summary>
     public partial class MainWindow : Window
     {
-        public VMModel vm = new VMModel();
+        private VMModel vm = new VMModel();
         public string model;
         public string brand;
         public string path;
