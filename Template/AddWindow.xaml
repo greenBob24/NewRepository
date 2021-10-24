@@ -20,7 +20,7 @@
             </StackPanel>
             <Button x:Name="addButton" Width="100" 
                     HorizontalAlignment="Left"
-                    Margin="0,10" Click="addButton_Click">Добавить</Button>
+                    Margin="0,10"  >Добавить</Button>
         </StackPanel>
      
     </Grid>

@@ -28,10 +28,10 @@ namespace Template
             _vm = vm;
         }
 
-        private void addButton_Click(object sender, RoutedEventArgs e)
-        {
-            _vm.AddCar(addBrandTextBox.Text, addModelTextBox.Text, "");
-            this.Close();
-        }
+        //private void addButton_Click(object sender, RoutedEventArgs e)
+        //{
+        //    _vm.AddCar(addBrandTextBox.Text, addModelTextBox.Text, "");
+        //    this.Close();
+        //}
     }
 }

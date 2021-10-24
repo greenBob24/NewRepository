@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Collections.ObjectModel;
 using System.IO;
+using System.Xml.Linq;
 
 namespace Template
 {
@@ -23,22 +24,23 @@ namespace Template
     public partial class MainWindow : Window
     {
         private VMModel vm = new VMModel();
-        public string model;
-        public string brand;
-        public string path;
+        //public string model;
+        //public string brand;
+        //public string path;
 
         public MainWindow()
         {
             InitializeComponent();
-            vm.Load();
+           
+            vm.Load(Directory.GetCurrentDirectory()+@"\XMLFile1.xml");
             carsList.ItemsSource = vm.Cars;
-          
+
         }
-        private void carsList_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            Car car = (Car)carsList.SelectedItem;
-            MessageBox.Show(car.ModelName);
-        }
+        //private void carsList_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        //{
+        //    Car car = (Car)carsList.SelectedItem;
+        //    MessageBox.Show(car.ModelName);   
+        //}
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {

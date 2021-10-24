@@ -24,7 +24,6 @@
             <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
         <ListBox x:Name="carsList" Grid.Row="0" 
-                 SelectionChanged="carsList_SelectionChanged" 
                  ScrollViewer.HorizontalScrollBarVisibility="Disabled"
                  ItemTemplate="{StaticResource dTemplate}"
                  ItemsPanel="{StaticResource panelTemplate}">
