@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Cars>
+  <Car modelName="logan" company="renault" image="\\renault.jpg"></Car>
+  <Car modelName="camry" company="toyota" image="\toyota.jpg"></Car>
+  <Car modelName="vesta" company="lada" image="\\lada_vesta.jpg"></Car>
+  <Car modelName="DB9" company="astonMartin" image="\astonmartin_db9.jpg"></Car>
+  <Car modelName="q7" company="audi" image=""></Car>
+</Cars>

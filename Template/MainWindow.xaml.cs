@@ -31,8 +31,10 @@ namespace Template
         public MainWindow()
         {
             InitializeComponent();
-           
-            vm.Load(Directory.GetCurrentDirectory()+@"\XMLFile1.xml");
+            string path = Directory.GetCurrentDirectory();
+            int index = path.IndexOf("bin\\Debug");
+            path = path.Substring(0, index);
+            vm.Load(path+"XMLFile2.xml");
             carsList.ItemsSource = vm.Cars;
 
         }
