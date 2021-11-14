@@ -49,8 +49,6 @@ namespace Template
             AddWindow addwindow = new AddWindow(vm);
             addwindow.ShowDialog();
 
-
-
         }
     }
 }

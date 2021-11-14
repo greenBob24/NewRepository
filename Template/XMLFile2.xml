@@ -5,4 +5,5 @@
   <Car modelName="vesta" company="lada" image="\\lada_vesta.jpg"></Car>
   <Car modelName="DB9" company="astonMartin" image="\astonmartin_db9.jpg"></Car>
   <Car modelName="q7" company="audi" image=""></Car>
+  <Car modelName="ы  " company="ччч" image=""></Car>
 </Cars>
